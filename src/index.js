@@ -1,5 +1,8 @@
-import "./css/style.css";
+// src/index.js
+import './css/style.css'; // ✅
+import { initGame } from './js/app';
 
-import "./js/app";
-
-// TODO: write your code in app.js
+// Запускаем только в браузере, после полной загрузки DOM
+document.addEventListener('DOMContentLoaded', () => {
+  initGame();
+});
