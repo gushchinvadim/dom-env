@@ -1,8 +1,14 @@
 // src/index.js
-import './css/style.css'; // ✅
+import './css/style.css';
 import { initGame } from './js/app';
 
-// Запускаем только в браузере, после полной загрузки DOM
+let gameInstance = null;
+
 document.addEventListener('DOMContentLoaded', () => {
-  initGame();
+  gameInstance = initGame();
+
+  // Пример: остановка через 10 секунд
+  setTimeout(() => {
+    gameInstance.stopGame();
+  }, 10000);
 });
