@@ -1,4 +1,4 @@
-// src/js/app.js
+
 import '../css/style.css';
 import moleImage from '../assets/goblin.png';
 
@@ -30,7 +30,7 @@ export function initGame() {
   let currentCell = getRandomCell();
   currentCell.append(mole);
 
-  // 💡 Сохраняем идентификатор таймера
+  // Сохраняем идентификатор таймера
   let intervalId = setInterval(() => {
     let newCell;
     do {
@@ -40,7 +40,7 @@ export function initGame() {
     currentCell = newCell;
   }, 1500);
 
-  // 💡 Функция остановки
+  // Функция остановки
   function stopGame() {
     clearInterval(intervalId);
     // Опционально: очистить DOM

@@ -1,4 +1,4 @@
-// src/js/app.test.js
+
 import { initGame } from './app';
 
 let gameInstance = null;
